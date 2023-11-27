@@ -1,0 +1,222 @@
+:root {
+  font-family: /* Inter, system-ui, Avenir, */ Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #18161f; */
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  background-color: #3a354a;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  padding: 0;
+  display: flex;
+  
+  /*margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;*/
+}
+
+/* h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+} */
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+.deleteUncomplete{
+  height: fit-content;
+  border: 1px solid #9e5252;
+  border-radius: 100px;
+  margin: 10px 5px;
+  background-color: rgb(50, 4, 4);
+}
+
+.deleteUncomplete:hover{
+  border: 1px solid #ffffff;
+  background-color: rgb(150, 0, 0);
+}
+
+.deleteComplete{
+  height: fit-content;
+  border: 1px solid #9e5252;
+  border-radius: 100px;
+  margin: 10px 5px;
+  background-color: rgb(31, 0, 0);
+}
+
+.deleteComplete:hover{
+  border: 1px solid #ffffff;
+  background-color: rgb(150, 0, 0);
+}
+
+.changeCatFinish{
+  height: fit-content;
+  border: 1px solid #ffffff;
+  border-radius: 10 px;
+  margin: 10px 5px;
+  background-color: rgb(4, 45, 4);
+}
+
+.changeCatFinish:hover{
+  border: 1px solid #ffffff;
+  background-color: rgb(0, 93, 0);
+}
+
+.changeCatToDo{
+  height: fit-content;
+  border: 1px solid #ffffff;
+  border-radius: 10 px;
+  margin: 10px 5px;
+  background-color: rgb(33, 31, 4);
+}
+
+.changeCatToDo:hover{
+  border: 1px solid #ffffff;
+  background-color: rgb(116, 108, 0);
+}
+
+.tasks{
+  width: 600px;
+  display: flex;
+  justify-content: flex-start;/* 
+  align-items: top; */
+  border-radius: 10px;
+  background-color: #2f2440;
+  margin: 5px 10px;
+}
+
+.tasks:hover {
+  background-color: #381d5b;
+}
+
+.finishedTasks{
+  width: 600px;
+  display: flex;
+  justify-content: flex-start;/* 
+  align-items: top; */
+  border-radius: 10px;
+  background-color: #292431;
+  margin: 5px 10px;
+}
+
+.finishedTasks:hover {
+  background-color: #171120;
+}
+
+.taskInfo {
+  width: 400px;
+  margin: 0px 10px 0px 10px;
+}
+.taskInfoComplete{
+  width: 400px;
+  margin: 0px 10px 0px 10px;
+  color: rgb(107, 111, 108) ;
+}
+
+.addTask{
+  border: 2px solid white;
+  background-color: #5726c8;
+}
+form {
+  margin: 5px 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+h5{
+  margin-bottom: 25px;
+  margin-left: 10px;
+}
+
+h1{
+  color: rgb(183, 160, 255);
+}
+
+#danger  {
+  color: #965050;
+  background-color: #33232a;
+  padding: 1px 10px;
+  margin: 10px 40px;
+  border-radius: 10px;
+  transition: 300ms;
+}
+
+#danger:hover{
+  box-shadow: rgb(111, 48, 48) 1px 2px 5px;
+}
+
+#success {
+  color: #5cd145;
+  background-color: #232f33;
+  padding: 1px 10px;
+  margin: 10px 40px;
+  border-radius: 10px;
+  transition: 300ms;
+}
+
+#success:hover {
+  box-shadow: rgb(107, 151, 103) 1px 2px 5px;
+}
+
+.cancelButton{
+  margin: 5px 20px;
+  background-color: #563539;
+}
+
+.addTaskButton {
+  margin: 5px 20px;
+  background-color: #607d5a;
+}
