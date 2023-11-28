@@ -5,6 +5,24 @@ export default function TaskItem({id, name, complete, taskClass}) {
   let unfinishButton = useRef(null)
   let deleteButton = useRef(null)
 
+    /* let unfinished = () => {
+      if (localStorage.getItem("toDoList") == null || localStorage.getItem("toDoList") == undefined) {
+        return []
+      } else {
+        let lista = JSON.parse(localStorage.getItem("toDoList"))
+        return lista
+      }
+    }
+
+    let finished = () => {
+      if(localStorage.getItem("doneList") == null || localStorage.getItem("doneList") == undefined) {
+        return []
+      } else {
+        let lista = JSON.parse(localStorage.getItem("doneList"))
+        return lista
+      }
+    } */
+
     let unfinished = JSON.parse(localStorage.getItem("toDoList"))
     let finished = JSON.parse(localStorage.getItem("doneList"))
 

@@ -17,16 +17,27 @@ export default function TaskList() {
     let [unfinishedTasks, setUnfinishedTaks] = useState([""])
 
     useEffect(()=> {
-        /* let updateFromLocalStorage = () => {
-            setUnfinishedTaks(JSON.parse(localStorage.getItem("toDoList")));
-            setFinishedTaks(JSON.parse(localStorage.getItem("doneList")));
+        let updateFromLocalStorage = () => {
+            if(localStorage.getItem("toDoList") == null || undefined) {
+                setUnfinishedTaks([])
+            } else {
+                setUnfinishedTaks(JSON.parse(localStorage.getItem("toDoList")));
+            }
+
+            if(localStorage.getItem("doneList") == null || undefined) {
+                setFinishedTaks([]);
+            } else {
+                setFinishedTaks(JSON.parse(localStorage.getItem("doneList")));
+            }
+            /* setUnfinishedTaks(JSON.parse(localStorage.getItem("toDoList")));
+            setFinishedTaks(JSON.parse(localStorage.getItem("doneList"))); */
           };
         let timeoutId = setTimeout(updateFromLocalStorage, 75);
       
-        return () => clearTimeout(timeoutId); */
-        setUnfinishedTaks(JSON.parse(localStorage.getItem("toDoList")));
-            setFinishedTaks(JSON.parse(localStorage.getItem("doneList")));
-    }, [])
+        return () => clearTimeout(timeoutId);
+        /* setUnfinishedTaks(JSON.parse(localStorage.getItem("toDoList")));
+            setFinishedTaks(JSON.parse(localStorage.getItem("doneList")));*/
+    })
 
     let [showUnf, setShowUnf] = useState(0)
 

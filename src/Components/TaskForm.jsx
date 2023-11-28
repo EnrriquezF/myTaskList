@@ -1,6 +1,21 @@
 import React, {useRef} from 'react'
 
 export default function TaskForm() {
+  /* let toDoList = () => {
+    if(localStorage.getItem("toDoList") == null || undefined){
+      return "";
+    } else {
+      return localStorage.getItem("toDoList")
+    }
+  }
+
+  let doneList = () => {
+    if(localStorage.getItem("doneList") == null || undefined) {
+      return ""
+    } else {
+      return localStorage.getItem("doneList")
+    }
+  } */
   let toDoList = localStorage.getItem("toDoList") //hay que parsear
   let doneList = localStorage.getItem("doneList") //hay que parsear
   
