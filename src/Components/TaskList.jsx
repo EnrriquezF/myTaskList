@@ -24,7 +24,7 @@ export default function TaskList() {
         let timeoutId = setTimeout(updateFromLocalStorage, 75);
       
         return () => clearTimeout(timeoutId);
-    })
+    }, [])
 
     let [showUnf, setShowUnf] = useState(0)
 
