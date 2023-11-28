@@ -153,7 +153,6 @@ export default function TaskItem({id, name, complete, taskClass}) {
     } else {
       let finishedTask = finished.filter(task => task.id == (parseInt(deleteButton.current.parentElement.id)))
       let unfinishedTask = unfinished.filter(task => task.id == (parseInt(deleteButton.current.parentElement.id)))
-      console.log(deleteButton.current.parentElement);
       if(deleteButton.current.parentElement.className === "finishedTasks"){
         let deleteTask = finished.indexOf(finishedTask[0]);
         finished.splice(deleteTask, 1)
