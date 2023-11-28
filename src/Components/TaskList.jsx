@@ -17,13 +17,15 @@ export default function TaskList() {
     let [unfinishedTasks, setUnfinishedTaks] = useState([""])
 
     useEffect(()=> {
-        let updateFromLocalStorage = () => {
+        /* let updateFromLocalStorage = () => {
             setUnfinishedTaks(JSON.parse(localStorage.getItem("toDoList")));
             setFinishedTaks(JSON.parse(localStorage.getItem("doneList")));
           };
         let timeoutId = setTimeout(updateFromLocalStorage, 75);
       
-        return () => clearTimeout(timeoutId);
+        return () => clearTimeout(timeoutId); */
+        setUnfinishedTaks(JSON.parse(localStorage.getItem("toDoList")));
+            setFinishedTaks(JSON.parse(localStorage.getItem("doneList")));
     }, [])
 
     let [showUnf, setShowUnf] = useState(0)
