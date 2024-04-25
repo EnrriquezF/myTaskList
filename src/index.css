@@ -1,12 +1,8 @@
 :root {
   font-family: /* Inter, system-ui, Avenir, */ Helvetica, Arial, sans-serif;
-  line-height: 1.5;
   font-weight: 400;
-
-  /* color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #18161f; */
-  color-scheme: light dark;
+  padding: 0px;
+  margin: 0px;
   color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
@@ -16,32 +12,17 @@
 }
 
 html, body {
-  background-color: #3a354a;
+  background-color: #F6DCA9;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
 
 body {
-  padding: 0;
+  padding: 0px;
+  padding-top: 0;
   display: flex;
   
-  /*margin: 0;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;*/
+  margin: 0px;
 }
-
-/* h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-} */
 
 button {
   border-radius: 8px;
@@ -53,9 +34,8 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
+  
+  color: white;
 }
 button:focus,
 button:focus-visible {
@@ -64,11 +44,8 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #F6DCA9;
     background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
   }
   button {
     background-color: #f9f9f9;
@@ -77,117 +54,166 @@ button:focus-visible {
 
 
 .deleteUncomplete{
-  height: fit-content;
-  border: 1px solid #9e5252;
+  width: 55px;
+  height: 40px;
+  border: 1px solid white;
   border-radius: 100px;
+  padding: 0px;
   margin: 10px 5px;
-  background-color: rgb(50, 4, 4);
+  background-color: #ED5555;
 }
 
 .deleteUncomplete:hover{
   border: 1px solid #ffffff;
-  background-color: rgb(150, 0, 0);
+  background-color: #c44545;
 }
 
 .deleteComplete{
-  height: fit-content;
-  border: 1px solid #9e5252;
+  width: 55px;
+  height: 40px;
+  border: 1px solid #c0c0c0;
   border-radius: 100px;
+  padding: 0px;
   margin: 10px 5px;
-  background-color: rgb(31, 0, 0);
+  background-color: #d83f3f;
 }
 
 .deleteComplete:hover{
   border: 1px solid #ffffff;
-  background-color: rgb(150, 0, 0);
+  background-color: #ad3c3c;
 }
 
 .changeCatFinish{
   height: fit-content;
   border: 1px solid #ffffff;
-  border-radius: 10 px;
+  color: white;
+  border-radius: 10px;
   margin: 10px 5px;
-  background-color: rgb(4, 45, 4);
+  background-color: #87BC7E;
 }
 
 .changeCatFinish:hover{
   border: 1px solid #ffffff;
-  background-color: rgb(0, 93, 0);
+  background-color: #4f9743;
 }
 
 .changeCatToDo{
   height: fit-content;
   border: 1px solid #ffffff;
-  border-radius: 10 px;
+  color: white;
+  border-radius: 10px;
   margin: 10px 5px;
-  background-color: rgb(33, 31, 4);
+  background-color: #70a466;
 }
 
 .changeCatToDo:hover{
   border: 1px solid #ffffff;
-  background-color: rgb(116, 108, 0);
+  background-color: #487340;
+}
+
+.showButton{
+    height: fit-content;
+    width:  90%;
+    border-radius: 10px;
+    background-color: #ED5555;
+    font-weight: 550;
+    margin: 1% 5% 3%;
+    color: #ffffff;
+    text-align: center;
 }
 
 .tasks{
-  width: 600px;
+  height: 130px;
+  width:  90%;
   display: flex;
   justify-content: flex-start;/* 
   align-items: top; */
   border-radius: 10px;
-  background-color: #2f2440;
-  margin: 5px 10px;
+  background-color: #FFE0BB;
+  margin: 1% 5% 3%;
+  color: #62574D;
+  text-align: left;
 }
 
 .tasks:hover {
-  background-color: #381d5b;
+  background-color: rgb(255, 195, 123);
 }
 
 .finishedTasks{
-  width: 600px;
+  height: 130px;
+  width:  90%;
   display: flex;
   justify-content: flex-start;/* 
   align-items: top; */
   border-radius: 10px;
-  background-color: #292431;
-  margin: 5px 10px;
+  background-color: #E9BC88;
+  margin: 1% 5% 3%;
+  color: #423b35;
+  text-align: left;
 }
 
 .finishedTasks:hover {
-  background-color: #171120;
+  color: #342e2a;
+  background-color: #caa171;
 }
 
 .taskInfo {
-  width: 400px;
+  width: 75%;
   margin: 0px 10px 0px 10px;
 }
 .taskInfoComplete{
-  width: 400px;
+  width: 75%;
   margin: 0px 10px 0px 10px;
-  color: rgb(107, 111, 108) ;
 }
 
 .addTask{
-  border: 2px solid white;
-  background-color: #5726c8;
+  width: 92%;
+  margin: 0px 4%;
+  color: #62574D;
+  background-color: #FAF4BC;
+}
+.addTask:hover{
+  background-color: #ffd865;
+}
+.addTaskWindow{
+  height: fit-content;
+  width: 92%;
+  margin: 0px 4%;
+  color: #62574D;
+  background-color: #FAF4BC;
+  border-radius: 8px;
+  padding: 3px 0px 15px;
+}
+.taskDescr{
+  margin-top: 25px;
 }
 form {
-  margin: 5px 25px;
+  margin: 5px 5px;
   display: flex;
   flex-direction: column;
 }
-
-h5{
-  margin-bottom: 25px;
-  margin-left: 10px;
+label{
+  font-weight: 550;
+  display: flex;
+  flex-direction: row;
 }
 
+p, h4{
+  padding-left: 4px;
+  color: #62574D;
+}
+ 
 h1{
   color: rgb(183, 160, 255);
+  font-size: 45px;
+  width: 92%;
+  margin: 15% 4%;
 }
 
 #danger  {
-  color: #965050;
-  background-color: #33232a;
+  width: fit-content;
+  color: #62574D;
+  background-color: #d83f3f;
   padding: 1px 10px;
   margin: 10px 40px;
   border-radius: 10px;
@@ -199,8 +225,8 @@ h1{
 }
 
 #success {
-  color: #5cd145;
-  background-color: #232f33;
+  color: #5fae4f;
+  background-color: #b7da8f;
   padding: 1px 10px;
   margin: 10px 40px;
   border-radius: 10px;
@@ -212,11 +238,257 @@ h1{
 }
 
 .cancelButton{
-  margin: 5px 20px;
-  background-color: #563539;
+  width: 92%;
+  margin: 5px 4%;
+  background-color: #A88D75;
 }
 
+.taskDescr .addTaskButton {
+  padding-left: 0px;
+}
 .addTaskButton {
-  margin: 5px 20px;
-  background-color: #607d5a;
+  width: 92%;
+  margin: 5px 4%;
+  background-color: #D05353 ;
+}
+
+
+
+h1{
+  font-family: 'Inika', serif;
+  font-weight: 400;
+  border: white;
+  -webkit-text-stroke: 1px white;
+  color: white;
+}
+
+h2{
+  font-family: 'Inika', serif;
+  font-size: 36px;
+  color: #FFC684;
+  -webkit-text-stroke: 0.5px red;
+  font-weight: 400;
+  margin: 10px;
+}
+
+.titleLight{
+  background-color: #FEA06B;
+  position: fixed;
+  height: 100vh;
+  width: 17%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: #62574D;
+}
+
+.gitHub{
+  height: 3.5%;
+  border-radius: 50px;
+  font-size: 20px;
+  width: 92%;
+  margin: 4% 4%;
+  color: #62574D;
+  display: flexbox;
+  align-content: center;
+  justify-content: center;
+  background-color: #FFF6E5;
+  text-align: center;
+}
+
+
+.tasksLight {
+  background-color: #F6DCA9;
+  position: absolute;
+  min-height: 100vh;
+  height: fit-content;
+  width: 100%;
+  top: 0;
+  left: 17%;
+  display: flex;
+  flex-direction: row;
+}
+
+.task-divider{
+  height: fit-content;
+  min-height: 94vh;
+  width: 25.5%;
+  background-color: #FFF6E5;
+  margin: 1.5% 21px;
+  border-radius: 40px;
+  text-align: center;
+}
+
+@media (max-width:1680px) {
+  h1 {
+    font-size: 40px;
+  }
+  .task-divider {
+    height: 94%;
+    width: 25.5%;
+    background-color: #FFF6E5;
+    margin: 1.5% 17px;
+    border-radius: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width:1440px) {
+  h1 {
+    font-size: 40px;
+  }
+  .task-divider {
+    height: 94%;
+    width: 25.5%;
+    background-color: #FFF6E5;
+    margin: 1.5% 16px;
+    border-radius: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width:1366px) {
+  h1 {
+    font-size: 38px;
+  }
+  .task-divider {
+    height: 94%;
+    width: 25.5%;
+    background-color: #FFF6E5;
+    margin: 1.5% 15px;
+    border-radius: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width:1280px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  label {
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .task-divider {
+    margin: 1.5% 13px;
+  }
+
+  .tasks, .finishedTasks {
+    height: 150px;
+  }
+}
+
+@media (max-width:1024px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  label {
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .task-divider {
+    margin: 1.5% 11px;
+  }
+
+  .tasks, .finishedTasks {
+    height: 150px;
+  }
+
+  .deleteUncomplete, .deleteComplete{
+    width: 55px;
+    height: 25px;
+  }
+}
+
+@media (max-width:950px) {
+  .titleLight {
+    background-color: #FEA06B;
+    position: relative;
+    min-height: 55vh;
+    height: fit-content;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .titleLight:hover {
+    .tasksLight {
+      position: fixed;
+      height: fit-content;
+      min-height: 25%;
+      width: 100%;
+      top: 75%;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  .addTask {
+    margin: 2% 4%;
+    height: 25%;
+  }
+
+  .taskDescr {
+    margin-top: 5px;
+  }
+
+  .gitHub{
+    height: 3.5%;
+    border-radius: 50px;
+    font-size: 20px;
+    width: 92%;
+    margin: 1% 4%;
+  }
+
+
+  .addTaskButton, .cancelButton{
+    padding: 0px;
+  }
+
+  .addContent {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .tasksLight {
+    position: fixed;
+    height: fit-content;
+    min-height: 50%;
+    width: 100%;
+    top: 20%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .task-divider {
+    height: fit-content;
+    width: 94%;
+    background-color: #FFF6E5;
+    margin: 1.5% 3%;
+    border-radius: 40px;
+    text-align: center;
+  }
+
+  h1 {
+  font-size: 45px;
+  width: 50%;
+  margin: 1% 0%;
+  }
 }

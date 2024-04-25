@@ -168,11 +168,11 @@ export default function TaskForm() {
 
 
   return (
-    <div>
-      <h2>Please, introduce here your task.</h2>
-      <h5>Its name must have a range of 3 to 36 characters</h5>
+    <div className="taskDescr">
+      <h4 className='enterTask'>Please, introduce here your task.</h4>
+      <p className='enterTaskInfo'>Its name must have a range of 3 to 36 characters</p>
       <form>
-        <label htmlFor="name">Task Name :  <input type="text" name="name" id="name" ref={nameInput}/></label>
+        <label htmlFor="name">Task Name:  <input type="text" name="name" id="name" ref={nameInput}/></label>
         <label htmlFor="completed">Completed:  <input type="checkbox" name="completed" id="completed" ref={check}/></label>
     </form>
     <div ref={alertRequirements}></div>
